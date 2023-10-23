@@ -33,7 +33,7 @@ void juegaHumano(int player) {
 	do {
 		printf("\nIntroduce tu jugada (fila columna): ");
 		scanf("%d %d", &i, &j);
-	} while (i < 0 || i > TAM_MAX || j < 0 || j > TAM_MAX
+	} while (i < 0 || i >= TAM_MAX || j < 0 || j >= TAM_MAX
 			|| board[i][j] != VACIO);
 	if (player == PLAYER1) // Player1, dados 1-6
 		board[i][j] = 1;
