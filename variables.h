@@ -27,4 +27,10 @@
 #define FIRSTSPACE_IA   2
 #define INTELIGENTE          3
 
+//Tablero del juego
+extern int board[TAM_MAX][TAM_MAX];
+//Tablero espejo que se usa para evaluar jugadas
+extern int mirror[TAM_MAX][TAM_MAX];
+// modojuego define quienes juegan. Util que sea externo para cuando se come, ya que si es PC vs PC, se come automáticamente sin consultar posiciones.
+extern int modoJuego;
 #endif /* VARIABLES_H_ */
