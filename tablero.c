@@ -4,13 +4,8 @@
  *  Created on: 22 oct. 2023
  *      Author: lp1-2023
  */
-
-#define TAM_MAX  5//REVISAR*
-#define VACIO 0//REVISAR*
-extern int board[TAM_MAX][TAM_MAX];
-extern int mirror[TAM_MAX][TAM_MAX];
-
-
+#include <stdio.h>
+#include "variables.h"
 // Inicializa el tablero
 void initBoard() {
 	for (int i = 0; i < TAM_MAX; i++)
